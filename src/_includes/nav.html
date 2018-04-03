@@ -1,11 +1,22 @@
-{% assign post_count=site.posts | size %}
+<nav id="nav">
 
-<ul class="links">
-  <li class="{% if page.url == "/" %} active {% endif %}"><a href="{{ "/" | absolute_url }}">Home</a></li>
-  <li class="{% if page.url contains '/about/' %} active {% endif %}"><a href="{{ "/about/" | absolute_url }}">About Us</a></li>
-  {% if post_count > 0 %}
-  <li class="{% if page.url contains '/blog/' %} active {% endif %}"><a href="{{ "/blog/" | absolute_url }}">Blog</a></li>
-  {% endif %}
-  <li class="{% if page.url contains '/gigs/' %} active {% endif %}"><a href="{{ "/gigs/" | absolute_url }}">Gigs</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+    {% include nav-inner.html %}
+
+    <ul class="icons">
+        {% if site.email %}
+        <li><a href="mailto:{{site.email}}" class="icon fa-envelope-o" rel="nofollow"><span class="label">Email</span></a></li>
+        {% endif %}
+        {% if site.facebook %}
+        <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+        {% endif %}
+        {% if site.twitter %}
+        <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+        {% endif %}
+        {% if site.instagram %}
+        <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+        {% endif %}
+        {% if site.github %}
+        <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+        {% endif %}
+    </ul>
+</nav>

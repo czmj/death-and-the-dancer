@@ -28,8 +28,13 @@
 			text-align: center;
 		}
 
+		video {
+			max-width: 100%;
+			text-align: center;
+		}
+
 		> .post {
-			@include padding((_size(padding) * 4), (_size(padding) * 4));
+			@include padding((_size(padding) * 2), (_size(padding) * 4));
 
 			header {
 				&.major {
@@ -40,7 +45,7 @@
 					> h1, h2 {
 						font-size: 4rem;
 						line-height: 1.1;
-						margin: 0 0 _size(element-margin) 0;
+						margin: _size(element-margin) 0;
 					}
 				}
 			}
@@ -66,7 +71,7 @@
 						> h1, h2 {
 							font-size: 2.5rem;
 							line-height: 1.2;
-							margin: 0 0 (_size(element-margin) * 0.75) 0;
+							margin: (_size(element-margin) * 0.75) 0;
 						}
 					}
 				}
