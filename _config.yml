@@ -26,9 +26,10 @@ kramdown:
   toc_levels:       1..6
   enable_coderay:   false
 mathjax:            true
+source:             src
+destination:        dist
 sass:
-  sass_dir:         _sass
-  style:            compressed
+    sass_dir:       ./assets/styles
 
 # Comments
 disqus_shortname:   default
