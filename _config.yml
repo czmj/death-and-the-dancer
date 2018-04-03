@@ -1,8 +1,8 @@
 # Site
-title:              Massively
-bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
-locale:             en_US
+title:              Death and the Dancer
+bio:                'Come dance away your worldly cares.'
+description:        "Come dance away your worldly cares."
+locale:             en_GB
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
@@ -35,15 +35,15 @@ disqus_shortname:   default
 
 # Social
 analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
+twitter:            deathanddancer
+facebook:           deathandthedancer
+# instagram:          default
+# github:             default
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com
+location:           Sheffield, UK
+phone:              079565127647
+email:              deathandthedancer@gmail.com
 
 # Gems
 gems:

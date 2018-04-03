@@ -51,10 +51,18 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             {% include nav.html %}
 
             <ul class="icons">
+                {% if site.twitter %}
                 <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
+                {% endif %}
+                {% if site.facebook %}
                 <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
+                {% endif %}
+                {% if site.instagram %}
                 <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+                {% endif %}
+                {% if site.github %}
                 <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+                {% endif %}
             </ul>
         </nav>
 
@@ -86,6 +94,8 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
             </article>
 
             <!-- Posts -->
+            {% assign post_count=site.posts | size %}
+            {% if post_count > 0 %}
             <section class="posts">
                 {% for post in site.posts limit:3 %}
                 {% assign mod3 = forloop.index | modulo: 3 %}
@@ -117,6 +127,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
                     <li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
                 </ul>
             </footer>
+            {% endif %}
 
         </div>
 
