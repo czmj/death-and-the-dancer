@@ -1,0 +1,25 @@
+@font-face {
+    font-family:'Bridgnorth';
+    src: url('../fonts/Bridgnorth.eot');
+	src: url('../fonts/Bridgnorth.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Bridgnorth.woff2') format('woff2'),
+		url('../fonts/Bridgnorth.woff') format('woff'),
+		url('../fonts/Bridgnorth.svg#Bridgnorth') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-007A;
+}
+
+@font-face {
+    font-family:'Bridgnorth';
+    src: url('../fonts/Bridgnorth Bold.eot');
+	src: url('../fonts/Bridgnorth Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Bridgnorth Bold.woff2') format('woff2'),
+		url('../fonts/Bridgnorth Bold.woff') format('woff'),
+		url('../fonts/Bridgnorth Bold.svg#Bridgnorth Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-007A;
+}
