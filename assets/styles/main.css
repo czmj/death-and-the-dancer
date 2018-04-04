@@ -1396,6 +1396,25 @@ hr {
 .align-right {
   text-align: right; }
 
+.bit-widget,
+.bit-event-lists {
+  font-family: "Merriweather", Georgia, serif; }
+  .bit-widget .bit-widget .bit-event .bit-venue, .bit-widget .bit-widget .bit-event .bit-date,
+  .bit-event-lists .bit-widget .bit-event .bit-venue,
+  .bit-event-lists .bit-widget .bit-event .bit-date {
+    margin: 0; }
+  .bit-widget .bit-date.bit-date.bit-date,
+  .bit-event-lists .bit-date.bit-date.bit-date {
+    text-transform: none;
+    font-family: "Bridgnorth", cursive, serif;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0.075em;
+    margin: 0.5rem 0; }
+  .bit-widget .bit-details,
+  .bit-event-lists .bit-details {
+    border: none; }
+
 input, select, textarea {
   color: #2c2024; }
 
@@ -1405,6 +1424,8 @@ a {
   a:hover {
     border-bottom-color: transparent;
     color: #cd7543 !important; }
+  a.bit-button.bit-offers:hover {
+    color: #ffffff !important; }
 
 strong, b {
   color: #2c2024; }
@@ -2247,9 +2268,12 @@ table.alt tbody tr td {
   .promo .image {
     float: none;
     margin-bottom: 3rem;
-    order: 0; }
+    order: 0;
+    flex-basis: 40%; }
     .promo .image.right {
       order: 1; }
+  .promo p {
+    flex-basis: 80%; }
   @media screen and (max-width: 736px) {
     .promo {
       display: block; }
@@ -2257,6 +2281,17 @@ table.alt tbody tr td {
         display: block;
         margin: 2rem auto;
         max-width: 50%; } }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; }
+  .gallery img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px; }
 
 /* Wrapper */
 #wrapper {
@@ -2349,6 +2384,8 @@ table.alt tbody tr td {
     #intro a:hover {
       border-bottom-color: transparent;
       color: #cd7543 !important; }
+    #intro a.bit-button.bit-offers:hover {
+      color: #2c2024 !important; }
   #intro strong, #intro b {
     color: #ffffff; }
   #intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
@@ -2391,7 +2428,8 @@ table.alt tbody tr td {
         background-color: #cd7543; }
   #intro h1 {
     font-size: 5rem;
-    line-height: 1; }
+    line-height: 1;
+    letter-spacing: -1px; }
   #intro p {
     font-size: 1.25rem;
     font-style: italic;
@@ -2502,6 +2540,8 @@ table.alt tbody tr td {
     #header a:hover {
       border-bottom-color: transparent;
       color: #cd7543 !important; }
+    #header a.bit-button.bit-offers:hover {
+      color: #2c2024 !important; }
   #header strong, #header b {
     color: #ffffff; }
   #header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2575,6 +2615,8 @@ table.alt tbody tr td {
     #nav a:hover {
       border-bottom-color: transparent;
       color: #cd7543 !important; }
+    #nav a.bit-button.bit-offers:hover {
+      color: #2c2024 !important; }
   #nav strong, #nav b {
     color: #ffffff; }
   #nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
@@ -2778,6 +2820,8 @@ table.alt tbody tr td {
     #footer a:hover {
       border-bottom-color: transparent;
       color: #cd7543 !important; }
+    #footer a.bit-button.bit-offers:hover {
+      color: #f5f5f5 !important; }
   #footer strong, #footer b {
     color: #2c2024; }
   #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
@@ -3045,6 +3089,8 @@ table.alt tbody tr td {
     #copyright a:hover {
       border-bottom-color: transparent;
       color: #cd7543 !important; }
+    #copyright a.bit-button.bit-offers:hover {
+      color: #2c2024 !important; }
   #copyright strong, #copyright b {
     color: #ffffff; }
   #copyright h1, #copyright h2, #copyright h3, #copyright h4, #copyright h5, #copyright h6 {
