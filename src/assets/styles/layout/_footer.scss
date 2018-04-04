@@ -185,13 +185,13 @@
 		position: relative;
 		color: transparentize(_palette(invert, fg), 0.75);
 		cursor: default;
-		font-family: _font(family-heading);
+		font-family: _font(family);
 		font-size: 0.8rem;
 		font-weight: _font(weight-heading);
 		letter-spacing: 0.075em;
 		line-height: 1.5;
 		text-align: center;
-		text-transform: uppercase;
+		;
 		margin: (_size(padding) * 2) auto (_size(padding) * 4) auto;
 		width: calc(100% - #{_size(padding) * 2});
 		max-width: _size(wrapper);

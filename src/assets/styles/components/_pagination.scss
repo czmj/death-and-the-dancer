@@ -23,7 +23,7 @@
 			));
 			border: solid 2px;
 			display: inline-block;
-			font-family: _font(family-heading);
+			font-family: _font(family);
 			font-size: 0.8rem;
 			font-weight: _font(weight-heading);
 			height: _size(element-height);
@@ -35,7 +35,7 @@
 			position: relative;
 			text-align: center;
 			text-decoration: none;
-			text-transform: uppercase;
+			;
 		}
 
 		.next, .previous {
