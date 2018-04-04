@@ -1313,11 +1313,10 @@ p {
   margin: 0 0 2rem 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Bridgnorth", cursive, serif;
   font-weight: 900;
   line-height: 1.5;
   letter-spacing: 0.075em;
-  text-transform: uppercase;
   margin: 0 0 1rem 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     border-bottom: 0;
@@ -1414,15 +1413,31 @@ h1, h2, h3, h4, h5, h6 {
   color: #2c2024; }
 
 blockquote {
-  border-left-color: #eeeeee; }
+  border-left-color: #e0dfdf; }
 
 code {
-  background: rgba(220, 220, 220, 0.25);
-  border-color: #eeeeee; }
+  background: rgba(193, 190, 190, 0.25);
+  border-color: #e0dfdf; }
 
 hr {
-  border-bottom-color: #eeeeee; }
+  border-bottom-color: #e0dfdf; }
 
+@font-face {
+  font-family: 'Bridgnorth';
+  src: url("../fonts/Bridgnorth.eot");
+  src: url("../fonts/Bridgnorth.eot?#iefix") format("embedded-opentype"), url("../fonts/Bridgnorth.woff2") format("woff2"), url("../fonts/Bridgnorth.woff") format("woff"), url("../fonts/Bridgnorth.svg#Bridgnorth") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-007A; }
+@font-face {
+  font-family: 'Bridgnorth';
+  src: url("../fonts/Bridgnorth Bold.eot");
+  src: url("../fonts/Bridgnorth Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bridgnorth Bold.woff2") format("woff2"), url("../fonts/Bridgnorth Bold.woff") format("woff"), url("../fonts/Bridgnorth Bold.svg#Bridgnorth Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-007A; }
 /* Box */
 .box {
   border: solid 2px;
@@ -1438,7 +1453,7 @@ hr {
     padding: 0; }
 
 .box {
-  border-color: #eeeeee; }
+  border-color: #e0dfdf; }
 
 /* Button */
 input[type="submit"],
@@ -1457,7 +1472,7 @@ button,
   border: 0;
   cursor: pointer;
   display: inline-block;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Bridgnorth", cursive, serif;
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: 0.075em;
@@ -1466,7 +1481,6 @@ button,
   padding: 0 2rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   white-space: nowrap; }
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
@@ -1658,12 +1672,11 @@ form {
 
 label {
   display: block;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Bridgnorth", cursive, serif;
   font-weight: 900;
   line-height: 1.5;
   letter-spacing: 0.075em;
   font-size: 0.8rem;
-  text-transform: uppercase;
   margin: 0 0 0.75rem 0; }
   @media screen and (max-width: 980px) {
     label {
@@ -1802,7 +1815,7 @@ input[type="password"],
 input[type="email"],
 select,
 textarea {
-  border-color: #eeeeee; }
+  border-color: #e0dfdf; }
   input[type="text"]:focus,
   input[type="password"]:focus,
   input[type="email"]:focus,
@@ -1815,14 +1828,14 @@ select option {
   color: #2c2024; }
 
 .select-wrapper:before {
-  color: #eeeeee; }
+  color: #e0dfdf; }
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
   color: #2c2024; }
   input[type="checkbox"] + label:before,
   input[type="radio"] + label:before {
-    border-color: #eeeeee; }
+    border-color: #e0dfdf; }
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
   background-color: #2c2024;
@@ -2032,11 +2045,11 @@ dl {
     margin-left: 2rem; }
 
 ul.divided li {
-  border-top-color: #eeeeee; }
+  border-top-color: #e0dfdf; }
 ul.icons li a.icon:hover:before {
   color: #cd7543; }
 ul.icons.alt li .icon:before {
-  box-shadow: inset 0 0 0 2px #eeeeee; }
+  box-shadow: inset 0 0 0 2px #e0dfdf; }
 ul.icons.alt li a.icon:hover:before {
   box-shadow: inset 0 0 0 2px #cd7543; }
 
@@ -2098,7 +2111,7 @@ header {
       margin: 0 0 2rem 0; } }
 
 header.major .date:before, header.major .date:after {
-  border-top-color: #eeeeee; }
+  border-top-color: #e0dfdf; }
 
 /* Table */
 .table-wrapper {
@@ -2115,14 +2128,13 @@ table {
   table td {
     padding: 0.75rem 0.75rem; }
   table th {
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Merriweather", Georgia, serif;
     font-size: 0.8rem;
     font-weight: 900;
     letter-spacing: 0.075em;
     line-height: 1.5;
     padding: 0 0.75rem 0.75rem 0.75rem;
-    text-align: left;
-    text-transform: uppercase; }
+    text-align: left; }
     @media screen and (max-width: 980px) {
       table th {
         font-size: 0.9rem; } }
@@ -2146,17 +2158,17 @@ table {
       border-top: 0; }
 
 table tbody tr {
-  border-color: #eeeeee; }
+  border-color: #e0dfdf; }
   table tbody tr:nth-child(2n + 1) {
-    background-color: rgba(220, 220, 220, 0.25); }
+    background-color: rgba(193, 190, 190, 0.25); }
 table th {
   color: #2c2024; }
 table thead {
-  border-bottom-color: #eeeeee; }
+  border-bottom-color: #e0dfdf; }
 table tfoot {
-  border-top-color: #eeeeee; }
+  border-top-color: #e0dfdf; }
 table.alt tbody tr td {
-  border-color: #eeeeee; }
+  border-color: #e0dfdf; }
 
 /* Pagination */
 .pagination {
@@ -2176,7 +2188,7 @@ table.alt tbody tr td {
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
     border: solid 2px;
     display: inline-block;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Merriweather", Georgia, serif;
     font-size: 0.8rem;
     font-weight: 900;
     height: 3rem;
@@ -2186,8 +2198,7 @@ table.alt tbody tr td {
     min-width: 3rem;
     position: relative;
     text-align: center;
-    text-decoration: none;
-    text-transform: uppercase; }
+    text-decoration: none; }
   .pagination .next, .pagination .previous {
     text-decoration: none;
     padding: 0 1.75rem; }
@@ -2216,7 +2227,7 @@ table.alt tbody tr td {
       display: none; } }
 
 .pagination a, .pagination span {
-  border-color: #eeeeee; }
+  border-color: #e0dfdf; }
 .pagination a {
   color: #2c2024 !important; }
   .pagination a:hover {
@@ -2226,9 +2237,9 @@ table.alt tbody tr td {
     .pagination a:hover + a, .pagination a:hover + span {
       border-left-color: #cd7543; }
   .pagination a.active {
-    background-color: #eeeeee; }
+    background-color: #e0dfdf; }
 .pagination span {
-  color: #eeeeee; }
+  color: #e0dfdf; }
 
 .promo {
   display: flex;
@@ -2478,7 +2489,7 @@ table.alt tbody tr td {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  height: 20rem;
+  height: 25rem;
   padding-bottom: 8rem;
   position: relative;
   text-align: center;
@@ -2511,30 +2522,21 @@ table.alt tbody tr td {
     -webkit-pointer-events: auto;
     -ms-pointer-events: auto;
     pointer-events: auto;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 5px !important;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
-    font-size: 2.25rem;
-    font-weight: 900;
-    letter-spacing: 0.075em;
-    line-height: 1;
-    padding: 1rem 1.75rem;
-    text-transform: uppercase;
-    visibility: visible; }
+    border: none;
+    visibility: visible;
+    fill: currentColor; }
     #header .logo:hover {
-      border-color: #cd7543 !important;
-      color: #cd7543 !important; }
+      fill: #cd7543 !important; }
+    #header .logo img, #header .logo svg {
+      display: block;
+      max-height: 200px;
+      margin-top: 8rem; }
+      @media screen and (max-width: 980px) {
+        #header .logo img, #header .logo svg {
+          max-height: 150px; } }
   @media screen and (max-width: 980px) {
     #header {
-      height: 14rem;
       padding-bottom: 4rem; } }
-  @media screen and (max-width: 736px) {
-    #header {
-      padding-bottom: 3rem; }
-      #header .logo {
-        font-size: 1.75rem;
-        border-width: 3px !important; } }
 
 /* Nav */
 #nav {
@@ -2597,13 +2599,12 @@ table.alt tbody tr td {
     -webkit-flex-shrink: 1;
     -ms-flex-shrink: 1;
     flex-shrink: 1;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Merriweather", Georgia, serif;
     font-weight: 900;
     letter-spacing: 0.075em;
     list-style: none;
     margin-bottom: 0;
-    padding-left: 0;
-    text-transform: uppercase; }
+    padding-left: 0; }
     #nav ul.links li {
       display: block;
       padding-left: 0; }
@@ -2613,7 +2614,7 @@ table.alt tbody tr td {
         -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
         transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
         display: block;
-        font-size: 0.8rem;
+        font-size: 1rem;
         outline: none;
         padding: 0 2rem; }
         #nav ul.links li a:hover {
@@ -2649,7 +2650,7 @@ table.alt tbody tr td {
   z-index: 2; }
   #main > * {
     padding: 4rem 4rem 2rem 4rem ;
-    border-top: solid 2px #eeeeee;
+    border-top: solid 2px #e0dfdf;
     margin: 0; }
     #main > *:first-child {
       border-top: 0; }
@@ -2712,7 +2713,7 @@ table.alt tbody tr td {
       padding: 4rem;
       width: 50%; }
     #main > .posts > article {
-      border-color: #eeeeee;
+      border-color: #e0dfdf;
       border-left-width: 2px;
       border-style: solid;
       border-top-width: 2px;
@@ -2782,14 +2783,14 @@ table.alt tbody tr td {
   #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
     color: #2c2024; }
   #footer blockquote {
-    border-left-color: #eeeeee; }
+    border-left-color: #e0dfdf; }
   #footer code {
-    background: rgba(220, 220, 220, 0.25);
-    border-color: #eeeeee; }
+    background: rgba(193, 190, 190, 0.25);
+    border-color: #e0dfdf; }
   #footer hr {
-    border-bottom-color: #eeeeee; }
+    border-bottom-color: #e0dfdf; }
   #footer .box {
-    border-color: #eeeeee; }
+    border-color: #e0dfdf; }
   #footer input[type="submit"],
   #footer input[type="reset"],
   #footer input[type="button"],
@@ -2826,7 +2827,7 @@ table.alt tbody tr td {
   #footer input[type="email"],
   #footer select,
   #footer textarea {
-    border-color: #eeeeee; }
+    border-color: #e0dfdf; }
     #footer input[type="text"]:focus,
     #footer input[type="password"]:focus,
     #footer input[type="email"]:focus,
@@ -2837,13 +2838,13 @@ table.alt tbody tr td {
     background-color: #f5f5f5;
     color: #2c2024; }
   #footer .select-wrapper:before {
-    color: #eeeeee; }
+    color: #e0dfdf; }
   #footer input[type="checkbox"] + label,
   #footer input[type="radio"] + label {
     color: #2c2024; }
     #footer input[type="checkbox"] + label:before,
     #footer input[type="radio"] + label:before {
-      border-color: #eeeeee; }
+      border-color: #e0dfdf; }
   #footer input[type="checkbox"]:checked + label:before,
   #footer input[type="radio"]:checked + label:before {
     background-color: #2c2024;
@@ -2863,29 +2864,29 @@ table.alt tbody tr td {
   #footer .formerize-placeholder {
     color: #969092 !important; }
   #footer ul.divided li {
-    border-top-color: #eeeeee; }
+    border-top-color: #e0dfdf; }
   #footer ul.icons li a.icon:hover:before {
     color: #cd7543; }
   #footer ul.icons.alt li .icon:before {
-    box-shadow: inset 0 0 0 2px #eeeeee; }
+    box-shadow: inset 0 0 0 2px #e0dfdf; }
   #footer ul.icons.alt li a.icon:hover:before {
     box-shadow: inset 0 0 0 2px #cd7543; }
   #footer header.major .date:before, #footer header.major .date:after {
-    border-top-color: #eeeeee; }
+    border-top-color: #e0dfdf; }
   #footer table tbody tr {
-    border-color: #eeeeee; }
+    border-color: #e0dfdf; }
     #footer table tbody tr:nth-child(2n + 1) {
-      background-color: rgba(220, 220, 220, 0.25); }
+      background-color: rgba(193, 190, 190, 0.25); }
   #footer table th {
     color: #2c2024; }
   #footer table thead {
-    border-bottom-color: #eeeeee; }
+    border-bottom-color: #e0dfdf; }
   #footer table tfoot {
-    border-top-color: #eeeeee; }
+    border-top-color: #e0dfdf; }
   #footer table.alt tbody tr td {
-    border-color: #eeeeee; }
+    border-color: #e0dfdf; }
   #footer .pagination a, #footer .pagination span {
-    border-color: #eeeeee; }
+    border-color: #e0dfdf; }
   #footer .pagination a {
     color: #2c2024 !important; }
     #footer .pagination a:hover {
@@ -2895,9 +2896,9 @@ table.alt tbody tr td {
       #footer .pagination a:hover + a, #footer .pagination a:hover + span {
         border-left-color: #cd7543; }
     #footer .pagination a.active {
-      background-color: #eeeeee; }
+      background-color: #e0dfdf; }
   #footer .pagination span {
-    color: #eeeeee; }
+    color: #e0dfdf; }
   #footer > section {
     -moz-flex-basis: 50%;
     -webkit-flex-basis: 50%;
@@ -2912,7 +2913,7 @@ table.alt tbody tr td {
     -ms-flex-shrink: 1;
     flex-shrink: 1;
     padding: 4rem 4rem 2rem 4rem ;
-    border-left: solid 2px #eeeeee; }
+    border-left: solid 2px #e0dfdf; }
     #footer > section:first-child {
       border-left: 0; }
     #footer > section.split {
@@ -2927,7 +2928,7 @@ table.alt tbody tr td {
       padding: 0; }
       #footer > section.split > section {
         padding: 3rem 4rem 1rem 4rem ;
-        border-top: solid 2px #eeeeee; }
+        border-top: solid 2px #e0dfdf; }
         #footer > section.split > section:first-child {
           padding: 5rem 4rem 1rem 4rem ;
           border-top: 0; }
@@ -2983,7 +2984,7 @@ table.alt tbody tr td {
     #footer {
       display: block; }
       #footer > section {
-        border-top: solid 2px #eeeeee; }
+        border-top: solid 2px #e0dfdf; }
         #footer > section:first-child {
           border-top: 0; }
         #footer > section.split > section {
@@ -3026,13 +3027,12 @@ table.alt tbody tr td {
   position: relative;
   color: rgba(255, 255, 255, 0.25);
   cursor: default;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Merriweather", Georgia, serif;
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: 0.075em;
   line-height: 1.5;
   text-align: center;
-  text-transform: uppercase;
   margin: 4rem auto 8rem auto;
   width: calc(100% - 4rem);
   max-width: 72rem;
@@ -3098,12 +3098,11 @@ table.alt tbody tr td {
   right: 0.75rem;
   border: 0;
   color: #ffffff;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Merriweather", Georgia, serif;
   font-size: 0.9rem;
   font-weight: 900;
   letter-spacing: 0.075em;
   padding: 0.375rem 1.25rem;
-  text-transform: uppercase;
   z-index: 10001; }
   #navPanelToggle:before {
     -moz-osx-font-smoothing: grayscale;
@@ -3157,17 +3156,16 @@ table.alt tbody tr td {
     list-style: none;
     padding-left: 0; }
     #navPanel .links li {
-      border-top: solid 2px #eeeeee; }
+      border-top: solid 2px #e0dfdf; }
       #navPanel .links li a {
         border-bottom: 0;
         display: block;
-        font-family: "Source Sans Pro", Helvetica, sans-serif;
+        font-family: "Merriweather", Georgia, serif;
         font-size: 0.9rem;
         font-size: 0.9rem;
         font-weight: 900;
         letter-spacing: 0.075em;
-        padding: 0.75rem 0;
-        text-transform: uppercase; }
+        padding: 0.75rem 0; }
       #navPanel .links li:first-child {
         border-top: 0; }
   #navPanel .close {
