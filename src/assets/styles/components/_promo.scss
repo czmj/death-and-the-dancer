@@ -6,11 +6,17 @@
         float: none;
         margin-bottom: 3rem;
         order: 0;
+        flex-basis: 40%;
 
         &.right {
             order: 1;
         }
     }
+
+    p {
+        flex-basis: 80%
+    }
+    
     @include breakpoint(small) {
         display: block;
 
