@@ -185,6 +185,10 @@
 				border-bottom-color: transparent;
 				color: _palette($p, accent) !important;
 			}
+
+			&.bit-button.bit-offers:hover {
+				color: _palette($p, bg) !important;
+			}
 		}
 
 		strong, b {
@@ -206,6 +210,28 @@
 
 		hr {
 			border-bottom-color: _palette($p, border);
+		}
+	}
+
+	.bit-widget,
+	.bit-event-lists {
+		font-family: _font(family);
+
+		.bit-widget .bit-event .bit-venue, .bit-widget .bit-event .bit-date {
+			margin: 0;
+		}
+
+		.bit-date.bit-date.bit-date {
+			text-transform: none;
+			font-family: _font(family-heading);
+			font-weight: _font(weight-heading);
+			line-height: 1.5;
+			letter-spacing: 0.075em;
+			margin: (_size(element-margin) * 0.25) 0;
+		}
+
+		.bit-details {
+			border: none;
 		}
 	}
 

@@ -4,7 +4,6 @@ title: Death and the Dancer - About
 sitemap:
     priority: 0.7
     lastmod: 2018-04-02
-    changefreq: weekly
 ---
 
 <div class="promo">
