@@ -14,7 +14,7 @@
 		@include vendor('justify-content', 'flex-end');
 		@include vendor('pointer-events', 'none');
 		@include vendor('user-select', 'none');
-		height: 20rem;
+		height: 25rem;
 		padding-bottom: (_size(padding) * 4);
 		position: relative;
 		text-align: center;
@@ -29,35 +29,26 @@
 				'visibility 0.5s'
 			));
 			@include vendor('pointer-events', 'auto');
-			border-style: solid;
-			border-color: _palette(invert, border);
-			border-width: 5px !important;
-			font-family: _font(family);
-			font-size: 2.25rem;
-			font-weight: _font(weight-heading);
-			letter-spacing: 0.075em;
-			line-height: 1;
-			padding: 1rem 1.75rem;
-			;
+			border: none;
 			visibility: visible;
+			fill: currentColor;
 
 			&:hover {
-				border-color: _palette(invert, accent) !important;
-				color: _palette(invert, accent) !important;
+				fill: _palette(invert, accent) !important;
+			}
+
+			img, svg {
+				display: block;
+				max-height: 200px;
+				margin-top: (_size(element-margin) * 4);
+
+				@include breakpoint(medium) {
+					max-height: 150px;
+				}
 			}
 		}
 
 		@include breakpoint(medium) {
-			height: 14rem;
 			padding-bottom: (_size(padding) * 2);
-		}
-
-		@include breakpoint(small) {
-			padding-bottom: (_size(padding) * 1.5);
-
-			.logo {
-				font-size: 1.75rem;
-				border-width: 3px !important;
-			}
 		}
 	}
