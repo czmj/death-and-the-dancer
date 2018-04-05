@@ -1290,7 +1290,8 @@ body, input, select, textarea {
   font-family: "Merriweather", Georgia, serif;
   font-weight: 300;
   font-size: 1rem;
-  line-height: 2.375; }
+  line-height: 2.375;
+  letter-spacing: 0; }
 
 a {
   -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -1909,12 +1910,10 @@ input[type="radio"]:focus + label:before {
       width: 100%; }
   .image.left {
     float: left;
-    margin: 0 2rem 2rem 0;
-    top: 0.75rem; }
+    margin: 0 2rem 2rem 0; }
   .image.right {
     float: right;
-    margin: 0 0 2rem 2rem;
-    top: 0.75rem; }
+    margin: 0 0 2rem 2rem; }
   .image.fit {
     display: block;
     margin: 2.5rem 0;
@@ -2264,7 +2263,8 @@ table.alt tbody tr td {
 
 .promo {
   display: flex;
-  clear: both; }
+  clear: both;
+  margin: 0 0 2rem 0; }
   .promo .image {
     float: none;
     margin-bottom: 3rem;
@@ -2272,8 +2272,14 @@ table.alt tbody tr td {
     flex-basis: 40%; }
     .promo .image.right {
       order: 1; }
-  .promo p {
+  .promo .promo__body {
     flex-basis: 80%; }
+  .promo .promo__title span {
+    font-family: "Merriweather", Georgia, serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 2.375;
+    letter-spacing: 0; }
   @media screen and (max-width: 736px) {
     .promo {
       display: block; }
