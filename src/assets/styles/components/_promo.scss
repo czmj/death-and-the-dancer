@@ -1,6 +1,7 @@
 .promo {
     display: flex;
     clear: both;
+    margin: 0 0 _size(element-margin) 0;
 
     .image {
         float: none;
@@ -13,10 +14,20 @@
         }
     }
 
-    p {
+    .promo__body {
         flex-basis: 80%
     }
-    
+
+    .promo__title {
+        span {
+    		font-family: _font(family);
+    		font-weight: _font(weight);
+    		font-size: 1rem;
+    		line-height: 2.375;
+            letter-spacing: 0;
+        }
+    }
+
     @include breakpoint(small) {
         display: block;
 
