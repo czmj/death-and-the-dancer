@@ -2278,7 +2278,6 @@ table.alt tbody tr td {
     font-family: "Merriweather", Georgia, serif;
     font-weight: 300;
     font-size: 1rem;
-    line-height: 2.375;
     letter-spacing: 0; }
   @media screen and (max-width: 736px) {
     .promo {
