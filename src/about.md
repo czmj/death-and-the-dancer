@@ -21,7 +21,7 @@ sitemap:
     <div class="promo__body">
         <h2 class="promo__title">Ruth Nicholson <span>(violin)</span></h2>
         <p>
-        Never hath the instrument of the beast ring out so righteously and holy. Put your bodily rhythms into the service of grace and perhaps you shall be counted amongst the saved
+        Never hath the instrument of the beast rang out so righteously and holy. Put your bodily rhythms into the service of grace and perhaps you shall be counted amongst the saved
         </p>
     </div>
 </section>
