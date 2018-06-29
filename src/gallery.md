@@ -7,5 +7,5 @@ sitemap:
 ---
 <div class="gallery">
     <img src="{{ "/images/Death and the Dancer.jpg" | absolute_url }}" alt="">
-    <img src="{{ "/images/portraits_noise_long.png" | absolute_url }}" alt="">
+    <img src="{{ "/images/portraits_noise_long.jpg" | absolute_url }}" alt="">
 </div>
