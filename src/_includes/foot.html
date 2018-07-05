@@ -38,11 +38,14 @@
             {% if site.facebook %}
             <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
             {% endif %}
-            {% if site.twitter %}
-            <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-            {% endif %}
             {% if site.instagram %}
             <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
+            {% endif %}
+            {% if site.youtube %}
+            <li><a href="https://www.youtube.com/channel/{{site.youtube}}" class="icon fa-youtube-play" rel="nofollow"><span class="label">YouTube</span></a></li>
+            {% endif %}
+            {% if site.twitter %}
+            <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
             {% endif %}
             {% if site.github %}
             <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
